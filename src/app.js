@@ -10,9 +10,6 @@ app.config(function($sceProvider){
     $sceProvider.enabled(false);
 });
 
-app.config(function($routeProvider){
-
-});
 
 //utils
 function getURLRequestParams() {
