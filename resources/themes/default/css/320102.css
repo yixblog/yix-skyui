@@ -1,0 +1,304 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none;}
+a { color:#333; font-size:14px; text-decoration:none; white-space:nowrap;white-space:normal; }
+a:hover { text-decoration:underline;}
+
+body { background:url(../images/320102/bg.png) repeat;}
+
+.mapBg {
+	float:left;
+	width:1024px;
+	height:768px;
+	background:url(../images/320102/mapbg.png) no-repeat left top;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin:0 0 0 -512px;
+	position:relative;
+}
+.mapBg_xuanwu{
+	float:left;
+	width:1024px;
+	height:768px;
+	background:url(../images/320102/mapbg_xuanwu.png) no-repeat left top;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin:0 0 0 -512px;
+	position:relative;
+}
+
+
+/*----*/
+.mapBg a { padding:0 0px;}
+.mapBg a:hover { background:#629cda; color:#fff; text-decoration:none;}
+
+/*-------底部导航------*/
+.bottomNav {
+    position:absolute;
+    left:0px;
+    top:750px;
+    height:48px;
+    float:left;
+    background:url(../images/320102/bottomnav.png) repeat-x;
+    width:100%;
+}
+
+.bottomNav ul {
+	display:block;
+	margin:0 auto;
+	width:700px;
+	height:30px;
+	z-index: 10;
+}
+.bottomNav ul li { float:left; width:20%; text-align:center;}
+.bottomNav ul li a{
+	font-size:12px;
+	color:#fff;
+	line-height:30px;
+}
+
+
+/*-------add by Jiang_cheng_yu------*/
+/*.street01 a.ul_street01 {
+	display: none;
+	}*/
+.ul_street01 li,
+.ul_street02 li,
+.ul_street03 li,
+.ul_street04 li,
+.ul_street05 li,
+.ul_street06 li,
+.ul_street07 li,
+.ul_street08 li,
+.ul_street09 li,
+.ul_street10 li,
+.ul_street11 li,
+.ul_street12 li { float:left;	width: 110px;}
+
+.ul_street01 li a,
+.ul_street02 li a,
+.ul_street03 li a,
+.ul_street04 li a,
+.ul_street05 li a,
+.ul_street06 li a,
+.ul_street07 li a,
+.ul_street08 li a,
+.ul_street09 li a,
+.ul_street10 li a,
+.ul_street11 li a,
+.ul_street12 li a
+{
+	float:left;
+	color: #333;
+	padding: 10px;
+	_padding:5px;
+	width: 90px;
+}
+
+.ul_street01 li a:hover,
+.ul_street02 li a:hover,
+.ul_street03 li a:hover,
+.ul_street04 li a:hover,
+.ul_street05 li a:hover,
+.ul_street06 li a:hover,
+.ul_street07 li a:hover,
+.ul_street08 li a:hover,
+.ul_street09 li a:hover,
+.ul_street10 li a:hover,
+.ul_street11 li a:hover,
+.ul_street12 li a:hover{
+	background: #517cbc;
+	color: #FFF;
+}
+
+.ul_street01 {
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 320px;
+	top: 480px;
+	z-index: 10;
+	color: #FFF;
+	background: #FFF;
+	width:220px;
+	}
+
+.ul_street02 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 320px;
+	top: 421px;
+	z-index: 10;
+	width:220px;
+}
+.ul_street03 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 270px;
+	top: 320px;
+	z-index: 10;
+	width:220px;
+}
+.ul_street04 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 456px;
+	top: 325px;
+	width:220px;
+	z-index: 10;
+}
+.ul_street05 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 452px;
+	width:220px;
+	top: 248px;
+	z-index: 10;
+}
+.ul_street06 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 343px;
+	top: 190px;
+	z-index: 10;
+	width:220px;
+}
+.ul_street07 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 747px;
+	top: 511px;
+	z-index: 10;
+	width:220px;
+}
+
+	
+.posistion_relative {position: relative;}
+
+/* 2013-12-13 */
+/*--新街口街道--*/
+.mapBg_xuanwu .street01 h2 {
+	position:absolute;
+	float:left;
+	right:700px;
+	top:477px;
+	width:150px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -10px;
+}
+.mapBg_xuanwu .street01 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -10px;
+}
+
+/*---梅园新村街道---*/
+.mapBg_xuanwu .street02 h2 {
+	position:absolute;
+	float:left;
+	right:700px;
+	top:420px;
+	width:185px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -59px;
+}
+.mapBg_xuanwu .street02 h2:hover {
+	background: url(../images/320102/map_name_xuanwu_hover.png) -15px -59px;
+}
+
+
+/*---玄武门街道---*/
+.mapBg_xuanwu .street03 h2 {
+	position:absolute;
+	float:left;
+	right:750px;
+	top:320px;
+	width:150px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -109px;
+}
+.mapBg_xuanwu .street03 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -109px;
+	-moz-opacity:0.5;
+}
+
+
+/*--锁金村街道---*/
+.mapBg_xuanwu .street04 h2 {
+	position:absolute;
+	float:left;
+	left:309px;
+	top:318px;
+	width:145px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -158px;
+}
+.mapBg_xuanwu .street04 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -158px;
+}
+
+
+
+/*--玄武湖街道---*/
+.mapBg_xuanwu .street05 h2 {
+	position:absolute;
+	float:left;
+	left:300px;
+	top:257px;
+	width:160px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -207px;
+}
+.mapBg_xuanwu .street05 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -207px;
+}
+
+
+/*--红山街道---*/
+.mapBg_xuanwu .street06 h2 {
+	position:absolute;
+	float:left;
+	left:227px;
+	top:190px;
+	width:115px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -256px;
+}
+.mapBg_xuanwu .street06 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -256px;
+}
+
+
+/*--孝陵卫街道---*/
+.mapBg_xuanwu .street07 h2 {
+	position:absolute;
+	float:left;
+	left:597px;
+	top:580px;
+	width:160px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320102/map_name_xuanwu.png) -15px -305px;
+}
+.mapBg_xuanwu .street07 h2:hover {
+	background:url(../images/320102/map_name_xuanwu_hover.png) -15px -305px;
+}

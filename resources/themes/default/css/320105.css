@@ -1,0 +1,401 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none;}
+a { color:#333; font-size:14px; text-decoration:none; white-space:nowrap;white-space:normal; }
+a:hover { text-decoration:underline;}
+
+.jbody { background:url(../images/320105/bg.png) repeat;}
+
+.mapBg {
+	float:left;
+	width:1024px;
+	height:768px;
+	background:url(../images/320105/mapbg.png) no-repeat left top;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin:0 0 0 -512px;
+	position:relative;
+}
+
+/*--江心洲--*/
+.mapBg .street01 h2 {
+	position:absolute;
+	float:left;
+	right:538px;
+	top:372px;
+	width:150px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -8px -106px;
+}
+.mapBg .street01 h2:hover {
+	background:url(../images/320105/map_name_hover.png) -8px -106px;
+}
+.mapBg .street01 .comty01,
+.mapBg .street01 .comty02,
+.mapBg .street01 .comty03 {
+    position:absolute;
+    right:140px;
+    top:50px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+.mapBg .street01 .comty02 {
+    right:190px;
+    top:70px;
+}
+.mapBg .street01 .comty03 {
+    right:250px;
+    top:100px;
+}
+
+/*---南苑街道---*/
+.mapBg .street02 h2 {
+	position:absolute;
+	float:left;
+	right:156px;
+	top:482px;
+	width:115px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -14px -8px;
+}
+.mapBg .street02 h2:hover {
+	background: url(../images/320105/map_name_hover.png) -14px -8px;
+}
+.mapBg .street02 .comty01,
+.mapBg .street02 .comty02,
+.mapBg .street02 .comty03,
+.mapBg .street02 .comty04,
+.mapBg .street02 .comty05,
+.mapBg .street02 .comty06,
+.mapBg .street02 .comty07,
+.mapBg .street02 .comty08,
+.mapBg .street02 .comty09,
+.mapBg .street02 .comty10{
+    position:absolute;
+    right:340px;
+    top:190px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+.mapBg .street02 .comty02 {	right:260px; top:180px;}
+.mapBg .street02 .comty03 {	right:410px; top:220px;}
+.mapBg .street02 .comty04 {	right:320px; top:220px;}
+.mapBg .street02 .comty05 { right:480px; top:260px;}
+.mapBg .street02 .comty06 { right:365px; top:260px;}
+.mapBg .street02 .comty07 { right:530px; top:300px;}
+.mapBg .street02 .comty08 { right:440px; top:300px;}
+.mapBg .street02 .comty09 { right:640px; top:350px;}
+.mapBg .street02 .comty10 { right:530px; top:350px;}
+
+
+
+
+
+/*---莫愁湖街道---*/
+.mapBg .street03 h2 {
+	position:absolute;
+	float:left;
+	right:217px;
+	top:380px;
+	width:150px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -12px 144px;
+}
+.mapBg .street03 h2:hover {
+	background:url(../images/320105/map_name_hover.png) -12px 144px;
+	-moz-opacity:0.5;
+}
+.mapBg .street03 .comty01,
+.mapBg .street03 .comty02,
+.mapBg .street03 .comty03,
+.mapBg .street03 .comty04,
+.mapBg .street03 .comty05,
+.mapBg .street03 .comty06,
+.mapBg .street03 .comty07,
+.mapBg .street03 .comty08,
+.mapBg .street03 .comty09,
+.mapBg .street03 .comty10,
+.mapBg .street03 .comty11,
+.mapBg .street03 .comty12,
+.mapBg .street03 .comty13,
+.mapBg .street03 .comty14,
+.mapBg .street03 .comty15,
+.mapBg .street03 .comty16,
+.mapBg .street03 .comty17{
+    position:absolute;
+    right:355px;
+    top:330px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+.mapBg .street03 .comty02 {	right:280px; top:330px;}
+.mapBg .street03 .comty03 {	right:360px; top:360px;}
+.mapBg .street03 .comty04 {	right:260px; top:355px;}
+.mapBg .street03 .comty05 {	right:370px; top:390px;}
+.mapBg .street03 .comty06 {	right:280px; top:390px;}
+.mapBg .street03 .comty07 {	right:200px; top:390px;}
+.mapBg .street03 .comty08 {	right:400px; top:430px;}
+.mapBg .street03 .comty09 {	right:310px; top:430px;}
+.mapBg .street03 .comty10 {	right:210px; top:430px;}
+.mapBg .street03 .comty11 {	right:130px; top:430px;}
+.mapBg .street03 .comty12 {	right:360px; top:465px;}
+.mapBg .street03 .comty13 {	right:240px; top:465px;}
+.mapBg .street03 .comty14 {	right:140px; top:465px;}
+.mapBg .street03 .comty15 {	right:335px; top:510px;}
+.mapBg .street03 .comty16 {	right:240px; top:500px;}
+.mapBg .street03 .comty17 {	right:150px; top:500px;}
+
+
+
+
+/*--沙洲街道---*/
+.mapBg .street04 h2 {
+	position:absolute;
+	float:left;
+	left:566px;
+	top:545px;
+	width:115px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -15px -58px;
+}
+.mapBg .street04 h2:hover {
+	background:url(../images/320105/map_name_hover.png) -15px -58px;
+}
+.mapBg .street04 .comty01,
+.mapBg .street04 .comty02,
+.mapBg .street04 .comty03,
+.mapBg .street04 .comty04,
+.mapBg .street04 .comty05,
+.mapBg .street04 .comty06,
+.mapBg .street04 .comty07,
+.mapBg .street04 .comty08,
+.mapBg .street04 .comty09,
+.mapBg .street04 .comty10,
+.mapBg .street04 .comty11{
+    position:absolute;
+    left:40px;
+    top:540px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+.mapBg .street04 .comty02 {	left:150px;	top:545px;}
+.mapBg .street04 .comty03 {	left:250px;	top:545px;}
+.mapBg .street04 .comty04 {	left:80px;	top:570px;}
+.mapBg .street04 .comty05 {	left:210px;	top:570px;}
+.mapBg .street04 .comty06 {	left:120px;	top:600px;}
+.mapBg .street04 .comty07 {	left:270px;	top:600px;}
+.mapBg .street04 .comty08 {	left:150px;	top:630px;}
+.mapBg .street04 .comty09 {	left:240px;	top:630px;}
+.mapBg .street04 .comty10 {	left:330px;	top:630px;}
+.mapBg .street04 .comty11 {	left:180px;	top:510px;}
+
+
+
+/*--兴隆街道---*/
+.mapBg .street05 h2 {
+	position:absolute;
+	float:left;
+	left:551px;
+	top:434px;
+	width:115px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -14px 94px;
+}
+.mapBg .street05 h2:hover {
+	background:url(../images/320105/map_name_hover.png) -14px 94px;
+}
+.mapBg .street05 .comty01,
+.mapBg .street05 .comty02,
+.mapBg .street05 .comty03,
+.mapBg .street05 .comty04,
+.mapBg .street05 .comty042,
+.mapBg .street05 .comty05,
+.mapBg .street05 .comty06,
+.mapBg .street05 .comty07,
+.mapBg .street05 .comty08,
+.mapBg .street05 .comty09,
+.mapBg .street05 .comty10,
+.mapBg .street05 .comty11{
+    position:absolute;
+    left:340px;
+    top:530px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+
+.mapBg .street05 .comty02 {	left:420px; top:530px;}
+.mapBg .street05 .comty03 {	left:500px; top:530px;}
+.mapBg .street05 .comty04 {	left:320px; top:560px;}
+.mapBg .street05 .comty042 {left:400px; top:560px;}
+.mapBg .street05 .comty05 {	left:490px; top:565px;}
+.mapBg .street05 .comty06 {	left:410px; top:600px;}
+.mapBg .street05 .comty07 {	left:510px; top:600px;}
+.mapBg .street05 .comty08 { left:450px; top:625px;}
+.mapBg .street05 .comty09 { left:530px; top:645px;}
+.mapBg .street05 .comty10 { left:400px; top:650px;}
+.mapBg .street05 .comty11 { left:420px; top:675px;}
+
+
+/*--双闸街道---*/
+.mapBg .street06 h2 {
+	position:absolute;
+	float:left;
+	left:231px;
+	top:487px;
+	width:115px;
+	height:30px;
+	text-indent:-9999px;
+	background: url(../images/320105/map_name.png) -15px 45px;
+}
+.mapBg .street06 h2:hover {
+	background:url(../images/320105/map_name_hover.png) -15px 45px;
+}
+.mapBg .street06 .comty01,
+.mapBg .street06 .comty02 {
+    position:absolute;
+    left:310px;
+    top:690px;
+    float:left;
+    width:auto;
+    height:24px;
+    line-height:24px;
+}
+
+.mapBg .street06 .comty02 {	left:385px;	top:690px;}
+/*----*/
+.mapBg a { padding:0 6px;}
+.mapBg a:hover { background:#629cda; color:#fff; text-decoration:none;}
+
+/*-------底部导航------*/
+.bottomNav {
+    position:absolute;
+    left:0px;
+    top:750px;
+    height:48px;
+    float:left;
+    background:url(../images/320105/bottomnav.png) repeat-x;
+    width:100%;
+}
+
+.bottomNav ul {
+	display:block;
+	margin:0 auto;
+	width:700px;
+	height:30px;
+	z-index: 10;
+}
+.bottomNav ul li { float:left; width:20%; text-align:center;}
+.bottomNav ul li a{
+	font-size:12px;
+	color:#fff;
+	line-height:30px;
+}
+
+
+/*-------add by Jiang_cheng_yu------*/
+/*.street01 a.ul_street01 {
+	display: none;
+	}*/
+
+
+.ul_street01 li a,
+.ul_street02 li a,
+.ul_street03 li a,
+.ul_street04 li a,
+.ul_street05 li a,
+.ul_street06 li a
+{
+	display: block;
+	color: #333;
+	padding: 10px;
+	_padding:5px;
+	width: 110px;
+}
+
+.ul_street01 li a:hover,
+.ul_street02 li a:hover,
+.ul_street03 li a:hover,
+.ul_street04 li a:hover,
+.ul_street05 li a:hover,
+.ul_street06 li a:hover{
+	background: #517cbc;
+	color: #FFF;
+}
+
+.ul_street01 {
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 280px;
+	top: 310px;
+	z-index: 10;
+	color: #FFF;
+	background: #FFF;
+	}
+
+.ul_street02 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 860px;
+	top: 316px;
+	z-index: 10;
+}
+.ul_street03 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 803px;
+	top: 85px;
+	z-index: 10;
+}
+.ul_street04 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 450px;
+	top: 400px;
+	z-index: 10;
+}
+.ul_street05 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 465px;
+	top: 189px;
+	z-index: 10;
+}
+.ul_street06 {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	border: 1px solid #999;
+	left: 150px;
+	top: 480px;
+	z-index: 10;
+}
+
+
+	
+.posistion_relative {position: relative;}

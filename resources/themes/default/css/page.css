@@ -1,0 +1,466 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: 14px/24px "微软雅黑";
+    color: #333;
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat center top;
+}
+
+h1.loginTT {
+    font-size: 230%;
+    position: absolute;
+    float: left;
+    height: 48px;
+    width: 490px;
+    background: url(../images/logo.png) no-repeat center center;
+    text-indent: -9999px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    margin: -200px 0 0 -245px;
+}
+
+h1.loginTT.headerTT {
+    top: 10px;
+    margin-top: 0px;
+}
+
+.loginBox {
+    width: 260px;
+    height: 200px;
+    padding: 20px;
+    background: url(../images/boxBg.png);
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 5px #888;
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -120px 0 0 -150px;
+}
+
+.inputTxt {
+    float: left;
+    width: 97%;
+    line-height: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+.loginBt {
+    float: left;
+    margin-left: 25%;
+    width: 50%;
+    line-height: 45px;
+    height: 50px;
+    background: #2faced;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #1f7fb1;
+    font-weight: bold;
+    font-size: 160%;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.loginBt:hover {
+    border: 1px solid #1f7fb1;
+    border-top: 1px solid #074c6f;
+    border-bottom: 1px solid #fff;
+    background: #1f93cf;
+    cursor: pointer;
+}
+
+.copyRight {
+    position: absolute;
+    bottom: 20px;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.allBox {
+    width: 980px;
+    height: 660px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    margin-left: -490px;
+    background: url(../images/boxBg.png);
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 5px #888;
+    border-radius: 0px 5px 5px 5px;
+    z-index: 10;
+}
+
+.nav {
+    float: left;
+    width: 980px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    margin-left: -490px;
+    z-index: 11;
+}
+
+.nav li {
+    float: left;
+    min-width: 100px;
+    padding: 0 10px;
+    width: auto;
+    height: 39px;
+    line-height: 39px;
+    background: none;
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #dfddee;
+    text-align: center;
+    margin-right: 4px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.nav li a {
+    color: #fff;
+    line-height: 39px;
+}
+
+.nav li.selected, .nav li:hover {
+    float: left;
+    min-width: 100px;
+    padding: 0 10px;
+    width: auto;
+    height: 39px;
+    line-height: 39px;
+    background: url(../images/boxBg.png);
+    border: 1px solid #fff;
+    border-bottom: 1px solid #dfddee;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.nav li.selected a, .nav li:hover a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.loginOut {
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    margin-left: 390px;
+    z-index: 15;
+}
+
+.loginOut a {
+    color: #fff;
+    padding-left: 18px;
+    background: url(../images/out.png) no-repeat left center;
+}
+
+/*----*/
+.passwordEX {
+    float: left;
+    width: 75%;
+    height: 200px;
+    margin: 100px 0 0 0;
+}
+
+.passwordEX td {
+    line-height: 30px;
+}
+
+.passwordEX .tt {
+    width: 30%;
+    text-align: right;
+}
+
+/*--左右结构--*/
+.listBox {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.box_left {
+    float: left;
+    width: 160px;
+    height: 100%;
+}
+
+.box_right {
+    float: right;
+    width: 820px;
+    height: 100%;
+    overflow: auto;
+}
+
+.box_left .search {
+    float: left;
+    width: 100%;
+    padding: 6px 3px;
+    height: 24px;
+}
+
+.box_left .search .inputTxt2 {
+    float: left;
+    width: 116px;
+    height: 22px;
+    border: 1px solid #2faced;
+    background: #f0f0f0;
+    line-height: 22px;
+    color: #555;
+    border-radius: 3px 0px 0px 3px;
+    text-indent: 5px;
+}
+
+.box_left .search .searchBt {
+    height: 24px;
+    width: 38px;
+    float: left;
+    text-align: center;
+    background: #2faced;
+    color: #fff;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.box_left .search .searchBt:hover {
+    border: 1px solid #1f7fb1;
+    border-top: 1px solid #074c6f;
+    border-bottom: 1px solid #fff;
+    background: #1f93cf;
+    cursor: pointer;
+}
+
+.box_left .placeList {
+    height: 624px;
+    width: 100%;
+    float: left;
+    overflow: auto;
+}
+
+.box_left .placeList li {
+    padding: 0 2%;
+    width: 96%;
+    border-bottom: 1px solid #b6b6b6;
+    line-height: 34px;
+}
+
+.box_left .placeList li:hover,
+.box_left .placeList li.selected {
+    background: #2faced;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box_right .nowPLC {
+    float: left;
+    display: block;
+    line-height: 40px;
+    width: 92%;
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box_right .tableStyle {
+    float: left;
+    width: 92%;
+    margin-left: 4%;
+    background: #fff;
+}
+
+.box_right .tableStyle td {
+    text-align: center;
+    line-height: 40px;
+}
+
+.box_right .tableStyle thead td {
+    background: #e3e3e3;
+    color: #767676;
+    font-weight: bold;
+}
+
+.box_right .tableStyle tbody td {
+    background: #f8f8f8;
+}
+
+.box_right .tableStyle .EXbt {
+    height: 24px;
+    line-height: 24px;
+    width: auto;
+    padding: 0 6px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #1f7fb1;
+    background: #2faced;
+    color: #fff;
+}
+
+.box_right .tableStyle .EXbt:hover {
+    border: 1px solid #1f7fb1;
+    border-top: 1px solid #074c6f;
+    border-bottom: 1px solid #fff;
+    background: #1f93cf;
+    cursor: pointer;
+}
+
+/*----*/
+.box_right .tta {
+    float: left;
+    margin-left: 15px;
+    width: 790px;
+}
+
+.box_right .textareaStyle {
+    float: left;
+    width: 680px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.box_right .submitBT {
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin-left: 5px;
+    text-align: center;
+    background: #2faced;
+    color: #fff;
+    font-size: 200%;
+    border-radius: 5px;
+    border: 2px solid #1f7fb1;
+}
+
+.box_right .submitBT:hover {
+    border: 2px solid #1f7fb1;
+    border-top: 2px solid #074c6f;
+    border-bottom: 2px solid #fff;
+    background: #1f93cf;
+    cursor: pointer;
+}
+
+.box_right .infoShow {
+    float: left;
+    margin-left: 15px;
+    width: 790px;
+    height: 470px;
+    background: #fff;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.loadBox {
+    width: 90%;
+    float: left;
+    margin: 8% 5% 4% 5%;
+    height: auto;
+    padding: 50px 0;
+    background: #f5f5f5;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 3px 5px #888 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 0px 3px 5px #888 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 0px 3px 5px #888 inset; /* For Latest Opera */
+}
+
+.loading {
+    width: 660px;
+    display: block;
+    clear: both;
+    margin: 50px auto;
+    background: #c8c8c8;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.loading .now {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-family: Arial;
+    font-size: 120%;
+    background: #93c241;
+    border-radius: 5px;
+}
+
+.updataBT {
+    float: left;
+    width: 20%;
+    height: 40px;
+    /*margin: 0 40%;*/
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background: #2faced;
+    color: #fff;
+    font-size: 140%;
+    border-radius: 5px;
+    border: 1px solid #1f7fb1;
+}
+
+.updataBT:hover {
+    border: 1px solid #1f7fb1;
+    border-top: 1px solid #074c6f;
+    border-bottom: 1px solid #fff;
+    background: #1f93cf;
+    cursor: pointer;
+}
+
+.tips {
+    line-height: 30px;
+    text-align: center;
+    color: #f00;
+    font-size: 160%;
+}
+
+.red {
+    color: red
+}
+
+.green {
+    color: green;
+}
+
+.sql_row {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.sql_table {
+    height: 420px;
+    overflow: auto;
+}

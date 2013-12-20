@@ -1,0 +1,52 @@
+body {
+    background: none;
+}
+.log_left{
+    width: 200px;
+    border-right: 2px solid #444;
+}
+.box_left .halfPlace{
+    height: 311px;
+    border-bottom: 2px solid #444;
+}
+.box_left .placeList li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pager {
+    float: left;
+    position: relative;
+}
+
+.pager span {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    margin: 2px;
+}
+.log_right{
+    width: 770px;
+}
+.box_right .logView{
+    overflow: visible;
+}
+.box_right .logTable{
+    margin: 0;
+}
+.box_right .logTable td {
+    text-align: left;
+    white-space: nowrap;
+    padding: 3px;
+}
+
+.box_right .checkbox{
+    border: 1px solid #aaa;
+    margin: 1px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.box_right .checkbox.active{
+    background: #0f0;
+    color: #000;
+}

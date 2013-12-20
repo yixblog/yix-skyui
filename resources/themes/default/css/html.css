@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px; list-style:none; font-size:12px;}
+.lbody { background:#fff url(../images/topbg.jpg) repeat-x left top;}
+.topBox,
+.toolsBox {
+	height:46px;
+	display:block;
+	width:980px;
+	margin:0 auto;
+	}
+.topBox .h1 {
+	background:url(../images/title01.jpg) no-repeat;
+	float:left;
+	width:90%;
+	height:36px;
+	text-indent:-9999px;
+	margin-left:40px;
+	}
+.topBox .mergeH1{
+    font-family:'微软雅黑';
+    margin-top:7px;
+    font-size:200%;
+    text-shadow:2px 2px 4px #000000;
+    color: #ffffff
+}
+
+/*----------*/
+.toolsBox {
+	min-height:200px;
+	height:auto;
+	margin-top:50px;
+	}
+		
+/*-------------*/
+.fielBox {
+	width:96%;
+	margin:0 2%;
+	float:left;
+	border:1px solid #c7c7c7;
+	background:#f1f1f1;
+	height:auto;
+	}
+.fielBox2 {
+	width:43%;
+	margin-left:2%;
+	float:left;
+	border:1px solid #c7c7c7;
+	background:#f1f1f1;
+	height:auto;
+	}
+		
+.fielBox legend,
+.fielBox2 legend {
+	font-size:20px;
+	font-family:"微软雅黑";
+	margin-left:1em;
+	}
+
+
+
+.arrow {
+	float:left;
+	width:68px;
+	height:74px;
+	margin:3% 0 0 2%;
+	}
+
+/*--------*/
+.fbInfo{
+	float:left;
+	width:88%;
+	margin:6%;
+	}
+
+.fielBox2 .fbInfo{
+	float:left;
+	width:88%;
+	margin:10% 6%;
+	}
+	
+.txtW { width:75%;}	
+/*----按钮定位---*/	 				
+.btPlace {
+	width:171px;
+	height:auto;
+	margin:0 auto;
+	}
+/*-------*/	
+.downPay {
+	float:left;
+	width:171px;
+	height:50px;
+	background:url(../images/downPay.jpg) no-repeat;
+	text-indent:-9999px;
+	border:0px;
+	margin:20px 0;
+	}
+/*-------*/	
+.toget {
+	float:left;
+	width:171px;
+	height:50px;
+	background:url(../images/toget.jpg) no-repeat;
+	text-indent:-9999px;
+	border:0px;
+	margin:20px 0;
+	}
+
+
+
+/*---------*/
+.showBox {
+ width:96%;
+ padding:0 2%;
+ line-height:24px;
+ font-size:14px;
+ height:600px;
+ overflow:auto;
+ background:#e8e8e8 url(../images/bottomB.jpg) repeat-x left top;
+ }
+
+.street{
+    display: none;
+}
+.street2{
+    display: none;
+}
+.community{
+    display: none;
+}
+.community2{
+    display: none;
+}
+select {
+    font-size:17px;
+    color:#909993
+}
+
+
+
+
+
+
+
+ 				
