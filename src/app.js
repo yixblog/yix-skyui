@@ -4,11 +4,30 @@
 
 var requestParams = getURLRequestParams();
 
-var app = angular.module('app',[]);
+var app = angular.module('app', []);
 //IE7 Support
-app.config(function($sceProvider){
+app.config(function ($sceProvider) {
     $sceProvider.enabled(false);
 });
+
+(function (requestParams, application) {
+    var appConfigName = requestParams.appname;
+    if (appConfigName == null || appContext[appConfigName] == null) {
+        alert("非法请求");
+        return
+    }
+    var appConfig = appContext[appConfigName];
+    var controllerFile = "controller/" + appConfig.controller + ".js";
+    var htmlTemplateFile = "htmlTemplate/" + appConfig.templateUrl;
+    $("<script></script>", {src: controllerFile, type: "text/javascript"}).appendTo("head");
+    application.directive("myTemplate", function () {
+        console.log('appending template');
+        return{
+            restrict: "E",
+            templateUrl: htmlTemplateFile
+        }
+    })
+})(requestParams, app);
 
 
 //utils

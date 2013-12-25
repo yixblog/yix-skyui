@@ -1,0 +1,20 @@
+<div ng-controller="volunteer">
+    <table>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>时间</th>
+            <th>内容</th>
+            <th>地点</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="volunteer in volunteers">
+            <td>{{volunteer.name}}</td>
+            <td>{{volunteer.time}}</td>
+            <td>{{volunteer.content}}</td>
+            <td>{{volunteer.location}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
