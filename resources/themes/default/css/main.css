@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑',sans-serif;
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+}
+.mainDiv{
+    float: left;
+    position: relative;
+    width: 1000px;
+}
+
+.leftNav{
+    float: left;
+    width: 200px;
+    background: #ccc;
+}
+
+.leftNav .logo{
+    width: 100%;
+    float: left;
+    height: 120px;
+    font-size: 30px;
+    line-height: 120px;
+    text-align: center;
+    color: #f00;
+}
+
+.leftNav ul{
+    width: 100%;
+    float: left;
+}
+
+.leftNav ul li{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    background: #0f0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.leftNav ul li:hover{
+    background: #ff0;
+}
+
+.topNav{
+    width: 800px;
+    float: left;
+    height: 40px;
+}
