@@ -1,15 +1,19 @@
-<div ng-controller="volunteer">
+<div ng-controller="volunteer" class="volunteers">
+    <input placeholder="关键字查询" ng-model="keyword"><br>
+    (双击修改)
     <table>
         <thead>
         <tr>
+            <th>序号</th>
             <th>姓名</th>
-            <th>时间</th>
+            <th ng-click="orderKey=orderKey!='time'?'time':null" ng-class="{green:orderKey=='time'}">时间</th>
             <th>内容</th>
             <th>地点</th>
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="volunteer in volunteers">
+        <tr ng-repeat="volunteer in volunteers|filter:keyword|orderBy:orderKey" ng-dblclick="editVolunteer(volunteer)">
+            <td>{{$index}}</td>
             <td>{{volunteer.name}}</td>
             <td>{{volunteer.time}}</td>
             <td>{{volunteer.content}}</td>
@@ -17,5 +21,5 @@
         </tr>
         </tbody>
     </table>
-    {{paramstring}}
+    <button ng-click="newVolunteer()">新增记录</button>
 </div>

@@ -1,0 +1,43 @@
+<div ng-controller="addVolunteerCtrl" class="fullbox volunteer-edit">
+    <div class="title">{{params.type=='add'?'新增':'修改'}}公益劳动记录</div>
+    <form name="editform">
+        <table>
+            <tbody>
+            <tr>
+                <td><label for="name">姓名</label></td>
+                <td><input id="name" name="name" ng-model="params.name" type="text" ng-maxlength="10" required>
+                    <span class="error" ng-show="editform.name.$dirty && editform.name.$invalid">错误:
+                        <span ng-show="editform.name.$error.required">请输入姓名</span>
+                        <span ng-show="editform.name.$error.maxlength">最大长度为10个字符</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="time">时间</label></td>
+                <td><input datepicker id="time" name="time" ng-model="params.time" type="text" required>
+                    <span class="error" ng-show="editform.time.$dirty && editform.time.$invalid">错误:
+                        <span ng-show="editform.time.$error.required">请输入时间</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="content">内容</label></td>
+                <td><textarea name="content" id="content" ng-model="params.content" required></textarea>
+                    <span class="error" ng-show="editform.content.$dirty && editform.content.$invalid">错误:
+                        <span ng-show="editform.content.$error.required">请输入劳动内容</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="location">地点</label></td>
+                <td><input type="text" id="location" name="location" required ng-model="params.location">
+                    <span class="error" ng-show="editform.location.$dirty && editform.location.$invalid">错误:
+                        <span ng-show="editform.location.$error.required">请输入地点</span>
+                    </span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button ng-click="saveEdit(params)" ng-disabled="editform.$invalid">{{params.type=='add'?'确认新增':'确认修改'}}</button>
+    </form>
+</div>

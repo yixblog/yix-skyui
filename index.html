@@ -11,6 +11,7 @@
     <script type="text/javascript" src="lib/jquery-ui/js/jquery.ui.datepicker-zh-CN.js"></script>
 
     <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
 
     <link rel="stylesheet" type="text/css" href="lib/jquery-ui/css/flat/jquery-ui-1.10.3.custom.min.css">
@@ -21,19 +22,28 @@
     <div class="leftNav">
         <div class="logo">LOGO</div>
         <ul>
-            <li ng-click="openTab('fs_VolunteerPage','公益劳动','src/workspace.html?appname=fs_VolunteerPage')">公益劳动</li>
+            <li ng-repeat="menuitem in menu" ng-click="chooseMenu(menuitem)" ng-class="{active:menuitem.active}">{{menuitem.label}}</li>
         </ul>
     </div>
     <div class="centerbox">
+        <div class="banner">BANNER</div>
         <div class="topNav">
+            <ul ng-if="submenu!=null">
+                <li ng-repeat="menuitem in submenu" ng-click="chooseSubmenu(menuitem)" ng-class="{active:menuitem.active}" ng-animate="">{{menuitem.label}}</li>
+            </ul>
+            <div class="tab_select">
+                <span class="label" ng-if="findOpeningTab()!=null">{{findOpeningTab().tabName}}</span>
+                <span class="label" ng-if="findOpeningTab()==null">暂无窗口</span>
 
+                <div class="tab_list">
+                    <span ng-repeat="tab in tabs" ng-class="{active:tab.active,tabitem:true}">
+                        <span ng-click="activeTab(tab)">{{tab.tabName}}</span>
+                        <span class="close" ng-click="closeTab(tab.appName)">X</span>
+                    </span>
+                </div>
+            </div>
         </div>
-        <div class="tab-list">
-            <span ng-repeat="tab in tabs" ng-class="{active:tab.active,tabitem:true}">
-                {{tab.tabName}}
-                <span class="close" ng-click="closeTab(tab)">X</span>
-            </span>
-        </div>
+
         <div class="tab-content">
             <iframe ng-repeat="tab in tabs" ng-show="tab.active" ng-src="{{tab.url}}"></iframe>
         </div>

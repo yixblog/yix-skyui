@@ -1,26 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: '微软雅黑',sans-serif;
+    font-family: '微软雅黑', sans-serif;
     font-size: 16px;
 }
 
-ul{
+body {
+    background: #eee;
+}
+
+ul {
     list-style-type: none;
 }
-.mainDiv{
+
+.mainDiv {
     float: left;
     position: relative;
     width: 1000px;
 }
 
-.leftNav{
+.leftNav {
     float: left;
     width: 200px;
     background: #ccc;
 }
 
-.leftNav .logo{
+.leftNav .logo {
     width: 100%;
     float: left;
     height: 120px;
@@ -30,27 +35,136 @@ ul{
     color: #f00;
 }
 
-.leftNav ul{
+.leftNav ul {
     width: 100%;
     float: left;
 }
 
-.leftNav ul li{
+.leftNav ul li {
     float: left;
     cursor: pointer;
     width: 100%;
-    background: #0f0;
+    background: #cfc;
     text-align: center;
     height: 30px;
     line-height: 30px;
 }
 
-.leftNav ul li:hover{
+.leftNav ul li:hover {
     background: #ff0;
 }
 
-.topNav{
+.centerbox {
     width: 800px;
     float: left;
+}
+
+.centerbox .banner {
+    width: 100%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.centerbox .topNav {
+    width: 100%;
+    float: left;
     height: 40px;
+    background: #eee;
+}
+
+.centerbox .topNav > ul {
+    float: left;
+    background: #55ccff;
+    border-left: 1px solid #fff;
+}
+
+.centerbox .topNav > ul > li.ng-enter, .centerbox .topNav > ul > li.ng-leave {
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+.centerbox .topNav > ul > li.ng-enter.ng-enter-active, .centerbox .topNav > ul > li.ng-leave {
+    height: 40px;
+}
+
+.centerbox .topNav > ul > li.ng-enter, .centerbox .topNav > ul > li.ng-leave-active {
+    height: 0;
+}
+
+.centerbox .topNav > ul > li {
+    text-align: center;
+    text-overflow: clip;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    border-right: 1px solid #fff;
+}
+
+.centerbox .topNav > ul > li:hover {
+    background: #ff0;
+}
+
+.centerbox .topNav .tab_select {
+    position: absolute;
+    width: 120px;
+    right: 0;
+    cursor: pointer;
+}
+
+.centerbox .topNav .tab_select .label {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    background: #ff0;
+}
+
+.centerbox .topNav .tab_select .tab_list {
+    float: left;
+    position: relative;
+    width: 100%;
+    display: none;
+    background: #ccffff;
+    box-shadow: 0 0 5px #0f0;
+}
+
+.centerbox .topNav .tab_select .tab_list .tabitem {
+    width: 100%;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.centerbox .topNav .tab_select .tab_list .tabitem .close {
+    position: absolute;
+    right: 0;
+}
+
+.centerbox .topNav .tab_select .tab_list .tabitem:hover {
+    background: #ff9900;
+}
+
+.centerbox .topNav .tab_select:hover .tab_list {
+    display: block;
+}
+
+.centerbox iframe {
+    float: left;
+    border: 0;
+    width: 100%;
+    height: 600px;
+    margin-top: 5px;
 }
